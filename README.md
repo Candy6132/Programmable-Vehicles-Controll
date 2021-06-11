@@ -20,14 +20,14 @@ This massive controller can be used to automatically set multiple Haulers or War
 
 The blueprint has a default, most common setting. All settings can be done with Constant Combinators on the left side - you don't need to change anything else. The Controller can only controll one type of service vehicle (Hauler or Warden). The Controller can send Hauler/Waren to only one type of vehicle (Miner ID Signal or any military ID Signal) or to all the types of vehicles, using the Unit ID Signal (gray icon with "ID"). Make sure all the vehicles can accept items the Hauler wants to deliver to them. Also make sure the Miners can give the Hauler the ore it wants to pick up. You can do that by selecting the AI vehicle with Remote Controller and clicking on the Edit UnitData button.
 
-Constant Combinator #1: Number of Haulers or Wardens to be used and the starting ID of them. Possible signals: AI Hauler ID Signal, AI Warden ID Signal, any positive N Signal
-Constant Combinator #2: Number of Miners/Tanks to be serviced and the starting ID of them. Possible signals: any AI vehicle ID Signal or Unit ID Signal, any positive N Signal
-Constant Combinator #3: Max service range - the maximum distance between the Hauler and the requesting vehicle, to allow for dispatch, Calculation speed - how fast the Controller will work - lower numbers will make it work faster. DO NOT SET BELOW 15! Possible signals: positive Distance Signal, 15+ Speed Signal
-Constant Combinator #4: Maximum number of items for Miner to hold, after which the Hauler will be dispatched to it. Possible signals: any positive item Signal
-Constant Combinator #5: Minimum number of items for Miner to have. If it has less, the Hauler will be sent. Possible signals: any positive item, Health, or Inventory Slot Signal
-Constant Combinator #6: The starting id of a parking Zone - specify a zone where idle Haulers should park. Possible signals: any positive Zone Signal
-Constant Combinator #7: Minimum number of items for Hauler to have and coordinates of the Supply Depo. Possible signals: any positive item Signal, X and Y Tile Position Signal
-Constant Combinator #8-13: Cordinates of Depo, what can be delivered there. Possible signals: any positive item Signal, X and Y Tile Position Signal
+#1Constant Combinator: Number of Haulers or Wardens to be used and the starting ID of them. Possible signals: AI Hauler ID Signal, AI Warden ID Signal, any positive N Signal
+#2Constant Combinator: Number of Miners/Tanks to be serviced and the starting ID of them. Possible signals: any AI vehicle ID Signal or Unit ID Signal, any positive N Signal
+#3 Constant Combinator: Max service range - the maximum distance between the Hauler and the requesting vehicle, to allow for dispatch, Calculation speed - how fast the Controller will work - lower numbers will make it work faster. DO NOT SET BELOW 15! Possible signals: positive Distance Signal, 15+ Speed Signal
+#4 Constant Combinator: Maximum number of items for Miner to hold, after which the Hauler will be dispatched to it. Possible signals: any positive item Signal
+#5 Constant Combinator: Minimum number of items for Miner to have. If it has less, the Hauler will be sent. Possible signals: any positive item, Health, or Inventory Slot Signal
+#6 Constant Combinator: The starting id of a parking Zone - specify a zone where idle Haulers should park. Possible signals: any positive Zone Signal
+#7 Constant Combinator: Minimum number of items for Hauler to have and coordinates of the Supply Depo. Possible signals: any positive item Signal, X and Y Tile Position Signal
+#8-13 Constant Combinator: Cordinates of Depo, what can be delivered there. Possible signals: any positive item Signal, X and Y Tile Position Signal
 
 DEFFENCE CONTROLLER:
 Sends forces to the X Zones. If there's no X Zone, then each tank parks at the Parking Zone (the Zone Box Red).
