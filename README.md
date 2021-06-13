@@ -1,4 +1,4 @@
-# Programmable-Vehicles-Controll
+# Programmable-Vehicles-Control
 Blueprint for Factorio AAI's Programmable Vehicles
 
 
@@ -7,27 +7,27 @@ Please read the AAI Programmable Vehicles tutorial beforehand:
 https://forums.factorio.com/viewtopic.php?f=93&t=38475
 
 
-ZONE CONTROLL:
+ZONE CONTROL:
 
-1. Place one of the zone controll structures for iron ore, copper ore, uranium ore, coal, wood (trees) or stone.
+1. Place one of the zone control structures for iron ore, copper ore, uranium ore, coal, wood (trees) or stone.
 2. Place the corresponding circle zone over a resource/ore patch with Zone Planner.
-3. Use one of the Mining Controllers to send miners to the circle zone.
+3. Use one of the Mining Controlers to send miners to the circle zone.
 4. Once the ore will become smaller, zones with no ore anymore will be removed, so miners wont go there.
 
 
-MINER CONTROLL:
+MINER CONTROL:
 
 1. Place one of the miner controlling structures.
 2. Choose the number of miners you want to use.
 3. Choose the miner type - it should be changed for Constant Combinator and the bottom left Arithmetic Combinator.
 
 
-HAULER CONTROLL 2.0:
+HAULER CONTROL 2.0:
 
 This massive controller can be used to automatically set multiple Haulers or Wardens to those vehicles, that need to have their ore picked up, have more ammo delivered or to be fixed. The controller checks for each Hauler where should he go. At first, it will check if the Hauler has all the items specified in the Constant Combinator #7. If not, it will go to the Depot specified in the Constant Combinator #7 and pick them up. If the Hauler is full, it will try to dump all the items to the Depots specified in Constant Combinators #8-13. Then it will look for any vehicle specified in Constant Combinator #2, that doesnt meet conditions from Constant Combinator #4 and #5. The closest target not meeting those conditions will have the priority to be serviced by Hauler or Warden. Once Haulers have nothing to do, they will park on Zones specified in Constant Combinator #6.
 
 
-The blueprint has a default, most common setting. All settings can be done with Constant Combinators on the left side - you don't need to change anything else. The Controller can only controll one type of service vehicle (Hauler or Warden). The Controller can send Hauler/Waren to only one type of vehicle (Miner ID Signal or any military ID Signal) or to all the types of vehicles, using the Unit ID Signal (gray icon with "ID"). Make sure all the vehicles can accept items the Hauler wants to deliver to them. Also make sure the Miners can give the Hauler the ore it wants to pick up. You can do that by selecting the AI vehicle with Remote Controller and clicking on the Edit UnitData button.
+The blueprint has a default, most common setting. All settings can be done with Constant Combinators on the left side - you don't need to change anything else. The Controller can only control one type of service vehicle (Hauler or Warden). The Controller can send Hauler/Waren to only one type of vehicle (Miner ID Signal or any military ID Signal) or to all the types of vehicles, using the Unit ID Signal (gray icon with "ID"). Make sure all the vehicles can accept items the Hauler wants to deliver to them. Also make sure the Miners can give the Hauler the ore it wants to pick up. You can do that by selecting the AI vehicle with Remote Controller and clicking on the Edit UnitData button.
 
 
 #1Constant Combinator: Number of Haulers or Wardens to be used and the starting ID of them. Possible signals: AI Hauler ID Signal, AI Warden ID Signal, any positive N Signal
